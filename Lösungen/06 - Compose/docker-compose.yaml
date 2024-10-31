@@ -1,0 +1,9 @@
+# Erstellen sie eine Docker Compose Datei welche einen web Service und einen Redis Service definiert
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+  redis:
+    image: "redis:alpine"
